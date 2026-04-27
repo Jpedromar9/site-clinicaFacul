@@ -680,3 +680,178 @@ ul {
 
 .mvv-icon {
   font-size: 1.4rem;
+   margin-bottom: 8px;
+}
+
+.mvv-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+
+.mvv-card p {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+/* Diferenciais */
+.diferenciais-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.diferenciais-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.diferencial-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-2);
+}
+
+.diferencial-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-pale);
+  color: var(--green);
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   SEÇÃO PROFISSIONAIS
+========================================== */
+.profissionais {
+  padding: var(--section-pad) 0;
+  background: var(--white);
+}
+
+/* Grid responsivo de 3 colunas */
+.prof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.prof-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.prof-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--green-light);
+}
+
+.prof-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.prof-img-wrap img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.4s ease;
+}
+
+.prof-card:hover .prof-img-wrap img {
+  transform: scale(1.04);
+}
+
+/* Badge de especialidade sobre a imagem */
+.prof-specialty-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.prof-info {
+  padding: 20px;
+}
+
+.prof-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.prof-crm {
+  font-size: 0.78rem;
+  color: var(--text-3);
+  margin-bottom: 8px;
+}
+
+.prof-desc {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+/* Tags de especialização */
+.prof-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.prof-tags span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  background: var(--green-pale);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+/* ==========================================
+   SEÇÃO SERVIÇOS
+========================================== */
+.servicos {
+  padding: var(--section-pad) 0;
+  background: var(--bg-alt);
+}
+
+/* Grid misto: 1 card grande + grid de 5 menores */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.servico-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  
