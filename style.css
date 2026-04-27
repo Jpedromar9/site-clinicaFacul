@@ -16,3 +16,91 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---- CSS VARIABLES ---- */
+:root {
+  /* Cores principais */
+  --green-dark:  #1d6a4e;
+  --green:       #2d7a5f;
+  --green-mid:   #3d9b78;
+  --green-light: #6cbfa0;
+  --green-pale:  #e8f5f0;
+  --green-ultra: #f0faf6;
+
+  --blue-dark:   #1a4b7a;
+  --blue:        #2d6aa0;
+  --blue-light:  #d0e8f8;
+  --blue-pale:   #eef6fc;
+
+  /* Neutros */
+  --white:  #ffffff;
+  --bg:     #f8fdfb;
+  --bg-alt: #f2f9f6;
+  --border: #d6ede5;
+  --text:   #1a2e25;
+  --text-2: #4a6659;
+  --text-3: #7a9e8e;
+
+  /* Tipografia */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+   /* Espaçamentos */
+  --section-pad: 96px;
+  --container:   1200px;
+  --gap:         2rem;
+
+  /* Efeitos */
+  --radius:    12px;
+  --radius-lg: 20px;
+  --shadow:    0 4px 24px rgba(45, 122, 95, 0.10);
+  --shadow-lg: 0 12px 48px rgba(45, 122, 95, 0.16);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- UTILITÁRIOS ---- */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Cabeçalho padrão de seção */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--green-pale);
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
