@@ -252,3 +252,73 @@ ul {
   border-radius: 2px;
   transition: var(--transition);
 }
+/* Estado aberto do hamburger */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================
+   BOTÕES GLOBAIS
+========================================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 20px rgba(45, 122, 95, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(45, 122, 95, 0.35);
+}
+
+.btn-primary.btn-white {
+  background: var(--white);
+  color: var(--green-dark);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.btn-primary.btn-white:hover {
+  background: var(--green-pale);
+  color: var(--green-dark);
+}
+
+.btn-primary.btn-full {
+  width: 100%;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--green-dark);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: 2px solid var(--green);
+  transition: var(--transition);
+}
+
+.btn-ghost:hover {
+  background: var(--green-pale);
+  transform: translateY(-2px);
+}
