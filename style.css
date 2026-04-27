@@ -1026,3 +1026,177 @@ ul {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
+    line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+/* ==========================================
+   SEÇÃO CONTATO
+========================================== */
+.contato {
+  padding: var(--section-pad) 0;
+  background: var(--white);
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #25d366;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 999px;
+  margin-bottom: 2rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  background: #1baa53;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.4);
+}
+
+.wpp-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Blocos de informação */
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.info-icon {
+  font-size: 1.3rem;
+  width: 44px;
+  height: 44px;
+  background: var(--green-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-block strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.info-block p {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+/* Horário de funcionamento */
+.horario-list {
+  margin-top: 6px;
+}
+
+.horario-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-2);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.horario-row:last-child {
+  border-bottom: none;
+}
+
+.horario-time {
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.horario-closed .horario-time {
+  color: #e53e3e;
+}
+
+/* Card do formulário */
+.form-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+}
+
+.form-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.form-card > p {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  margin-bottom: 1.5rem;
+}
+
+/* Grupos do formulário */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--text);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--green-mid);
+  box-shadow: 0 0 0 3px rgba(61, 155, 120, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-3);
+}
+
