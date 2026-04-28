@@ -873,7 +873,13 @@ ul {
 }
 
 .servico-card--large .servico-img-wrap img {
-  height: 440px;
+  flex: 1;
+}
+
+.servico-card--large .servico-img-wrap img {
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
 }
 
 .servico-img-wrap {
